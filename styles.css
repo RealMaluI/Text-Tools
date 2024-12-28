@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #00c6ff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-height: 100%;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00c6ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #00c6ff;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+textarea, .form-control, .form-select {
+    width: calc(100% - 0px);
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #00c6ff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f8f9fa;
+    font-size: 1rem;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.form-control, .form-select {
+    height: 50px;
+}
+
+textarea:focus, .form-control:focus, .form-select:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    background: #00c6ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0072ff;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    transform: scale(1.2);
+}
+
+.display-text {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+.html-output {
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow-x: auto;
+    color: #00c6ff;
+    word-break: break-word;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.form-control {
+    height: 50px;
+}
+
+select {
+    color: #FFFFFF;
+    background-color: #333333;
+    border: 1px solid #00c6ff;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+select:focus {
+    color: #000000;
+    background-color: #00c6ff;
+}
+
+select option {
+    color: black;
+    background: white;
+}
+
+select:focus option {
+    color: #000000;
+}
